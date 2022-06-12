@@ -1,5 +1,7 @@
 # ignore files for prettier
 
+node_modules/
+
 *.md
 
 # docs/

@@ -14,7 +14,7 @@ function checkAppEnv(env) {
 }
 
 // 用在react项目打包阶段，会启用@babel/preset-react，而不会启用react-refresh/babel
-const isEnvReactFresh = checkAppEnv('reactfresh');
+const isEnvReactHot = checkAppEnv('reacthot');
 
 module.exports = merge(commonConfig, {
   mode: 'development',
@@ -24,6 +24,6 @@ module.exports = merge(commonConfig, {
   target: 'web',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    isEnvReactFresh && new ReactRefreshWebpackPlugin(),
+    isEnvReactHot && new ReactRefreshWebpackPlugin(),
   ].filter(Boolean),
 });

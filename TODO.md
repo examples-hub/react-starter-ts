@@ -2,7 +2,7 @@
 
 ## fix
 
--[ ] 闪烁感
+-[ ] issue
 
 ## todo
 
@@ -14,7 +14,7 @@
 
 ## test
 
--[ ] 抖动
+-[ ] debounce
 
 ## refactor
 

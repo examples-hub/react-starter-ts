@@ -5,7 +5,7 @@
 ## features
 
 - minimal
-- built with react + typescript + babel + webpack from scratch
+- built with react + typescript + babel + webpack5 from scratch
 - support react fast refresh(hot reloading)
 
 ## quickstart

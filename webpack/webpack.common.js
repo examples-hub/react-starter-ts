@@ -71,5 +71,5 @@ module.exports = {
   experiments: {
     topLevelAwait: true,
   },
-  ignoreWarnings: [/Failed to parse source map/],
+  // ignoreWarnings: [/Failed to parse source map/],
 };
