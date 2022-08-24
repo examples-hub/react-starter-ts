@@ -6,6 +6,7 @@ module.exports = {
   // transformIgnorePatterns: ['^.+\\.js$'],
   transform: {
     '\\.[jt]sx?$': ['babel-jest'],
+    // '\\.[jt]sx?$': ['ts-jest'],
     '.+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$':
       'jest-transform-stub',
   },

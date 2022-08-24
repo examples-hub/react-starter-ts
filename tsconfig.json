@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/",
+    "outDir": "build",
     "module": "esnext",
-    "target": "es5",
-    "jsx": "react",
+    "target": "es6",
+    "jsx": "preserve",
     "allowJs": false,
     "checkJs": false,
     "allowSyntheticDefaultImports": true,
@@ -27,5 +27,5 @@
     "esModuleInterop": true,
     "pretty": true
   },
-  "exclude": ["node_modules/**/*", "bak/**/*"]
+  "exclude": ["node_modules/**/*", "-bak/**/*"]
 }

@@ -1,6 +1,6 @@
 # react-starter-ts
 
-> quickstart boilerplate for react using typescript
+> quickstart boilerplate for react using typescript/webpack/babel
 
 ## features
 
@@ -10,8 +10,9 @@
 
 ## quickstart
 
-``` shell
+```shell
 npm i
 npm run start
 ```
+
 - open http://localhost:8999/

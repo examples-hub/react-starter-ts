@@ -8,7 +8,7 @@ const devConfig = require('./webpack.dev');
 module.exports = merge(devConfig, {
   devServer: {
     // 若要使用热加载，还需要在cli上传入 --hot
-    // contentBase: path.resolve(__dirname, '../dist'),
+    // contentBase: path.resolve(__dirname, '../build'),
     // open: true,
     host: '0.0.0.0',
     port: 8999,

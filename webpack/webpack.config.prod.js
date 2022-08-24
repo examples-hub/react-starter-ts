@@ -1,13 +1,13 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const devServerConfig = require('./webpack.prod');
+const prodConfig = require('./webpack.prod');
 
-module.exports = merge(devServerConfig, {
+module.exports = merge(prodConfig, {
   entry: path.resolve(__dirname, '../src/render.tsx'),
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../build'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -17,6 +17,6 @@ module.exports = merge(devServerConfig, {
     }),
   ],
   // devServer: {
-  //   contentBase: path.resolve(__dirname, '../dist'),
+  //   contentBase: path.resolve(__dirname, '../build'),
   // },
 });

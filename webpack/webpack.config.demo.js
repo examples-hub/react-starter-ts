@@ -7,7 +7,7 @@ module.exports = merge(devServerConfig, {
   entry: path.resolve(__dirname, '../src/render.tsx'),
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../build'),
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -17,6 +17,6 @@ module.exports = merge(devServerConfig, {
     }),
   ],
   // devServer: {
-  //   contentBase: path.resolve(__dirname, '../dist'),
+  //   contentBase: path.resolve(__dirname, '../build'),
   // },
 });
